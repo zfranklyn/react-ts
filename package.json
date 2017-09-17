@@ -1,0 +1,17 @@
+{
+  "name": "react-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "ts-loader": "^2.3.7",
+    "tslint": "^5.6.0",
+    "typescript": "^2.4.2",
+    "webpack": "^3.6.0"
+  }
+}
