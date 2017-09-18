@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@blueprintjs/core@^1.28.0":
+"@blueprintjs/core@^1.23.0", "@blueprintjs/core@^1.28.0":
   version "1.28.0"
   resolved "https://registry.yarnpkg.com/@blueprintjs/core/-/core-1.28.0.tgz#673b70fe091292b532f52805a6b9195922ab1b9e"
   dependencies:
@@ -15,9 +15,42 @@
     tether "^1.4"
     tslib "^1.5.0"
 
+"@blueprintjs/table@^1.25.0":
+  version "1.25.0"
+  resolved "https://registry.yarnpkg.com/@blueprintjs/table/-/table-1.25.0.tgz#4f9a34227036803971d96e13be2b2beb52b36d1c"
+  dependencies:
+    "@blueprintjs/core" "^1.23.0"
+    classnames "^2.2"
+    es6-shim "^0.35"
+    pure-render-decorator "^1.1"
+    tslib "^1.5.0"
+
 "@types/dom4@^1.5.20":
   version "1.5.20"
   resolved "https://registry.yarnpkg.com/@types/dom4/-/dom4-1.5.20.tgz#ccf636d3b794fe65a4191ebc7ff979a78efea6c2"
+
+"@types/moment@^2.13.0":
+  version "2.13.0"
+  resolved "https://registry.yarnpkg.com/@types/moment/-/moment-2.13.0.tgz#604ebd189bc3bc34a1548689404e61a2a4aac896"
+  dependencies:
+    moment "*"
+
+"@types/pure-render-decorator@^0.2.28":
+  version "0.2.28"
+  resolved "https://registry.yarnpkg.com/@types/pure-render-decorator/-/pure-render-decorator-0.2.28.tgz#dc58f93b274aa65c72820470989972df3048152a"
+
+"@types/react-addons-css-transition-group@^15.0.3":
+  version "15.0.3"
+  resolved "https://registry.yarnpkg.com/@types/react-addons-css-transition-group/-/react-addons-css-transition-group-15.0.3.tgz#cfcc3b726c5e73ed81e5921ef0660e9f95965b4e"
+  dependencies:
+    "@types/react" "*"
+    "@types/react-addons-transition-group" "*"
+
+"@types/react-addons-transition-group@*":
+  version "15.0.1"
+  resolved "https://registry.yarnpkg.com/@types/react-addons-transition-group/-/react-addons-transition-group-15.0.1.tgz#0178de43e2b4ccfea8d2f7dfed252dcb339ff14a"
+  dependencies:
+    "@types/react" "*"
 
 "@types/react-dom@^15.5.4":
   version "15.5.4"
@@ -1212,6 +1245,10 @@ es6-set@~0.1.5:
     es6-iterator "~2.0.1"
     es6-symbol "3.1.1"
     event-emitter "~0.3.5"
+
+es6-shim@^0.35:
+  version "0.35.3"
+  resolved "https://registry.yarnpkg.com/es6-shim/-/es6-shim-0.35.3.tgz#9bfb7363feffff87a6cdb6cd93e405ec3c4b6f26"
 
 es6-symbol@3.1.1, es6-symbol@^3.1, es6-symbol@^3.1.1, es6-symbol@~3.1, es6-symbol@~3.1.1:
   version "3.1.1"
@@ -2426,6 +2463,10 @@ mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkd
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   dependencies:
     minimist "0.0.8"
+
+moment@*:
+  version "2.18.1"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.18.1.tgz#c36193dd3ce1c2eed2adb7c802dbbc77a81b1c0f"
 
 ms@2.0.0:
   version "2.0.0"

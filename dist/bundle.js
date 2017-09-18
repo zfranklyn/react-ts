@@ -22886,7 +22886,7 @@ exports = module.exports = __webpack_require__(49)(undefined);
 
 
 // module
-exports.push([module.i, ".delta-container {\n  border: 1px solid red; }\n", ""]);
+exports.push([module.i, ".delta-container {\n  width: 100%;\n  height: 100%;\n  border: 1px solid black; }\n", ""]);
 
 // exports
 
@@ -23026,7 +23026,7 @@ exports = module.exports = __webpack_require__(49)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  margin: 0 !important;\n  background-color: black; }\n", ""]);
+exports.push([module.i, "body {\n  margin: 0 !important; }\n", ""]);
 
 // exports
 
