@@ -5,9 +5,13 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack && cp ./src/index.html ./dist",
-		"start": "yarn run build && webpack-dev-server --content-base dist"
+    "start": "yarn run build && webpack-dev-server --content-base dist"
   },
   "dependencies": {
+    "@types/react": "^16.0.5",
+    "@types/react-dom": "^15.5.4",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "ts-loader": "^2.3.7",
