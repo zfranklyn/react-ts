@@ -1,9 +1,14 @@
 'use strict'
 
+const webpack = require('webpack');
+
 module.exports = {
 	entry: __dirname + '/src/index.tsx',
 	output: {
-		filename: './dist/bundle.js',
+		// https://stackoverflow.com/questions/41094833/how-to-make-webpack-typescript-react-webpack-dev-server-configuration-for-auto-b
+		path: __dirname + '/dist',
+		filename: 'bundle.js',
+		publicPath: '/',
 	},
 
 	resolve: {
@@ -19,6 +24,7 @@ module.exports = {
 			{ test: /\.scss$/,
 				loader: ['style-loader', 'css-loader', 'sass-loader'] },
 			{ test: /\.css$/,
+				exclude: ['./node_modules'],
 				loader: ['style-loader', 'css-loader'],
 			},
 			// https://github.com/palantir/blueprint/issues/123
@@ -45,7 +51,14 @@ module.exports = {
 	},
 
 	devServer: {
-		contentBase: './dist'
+		contentBase: './dist',
+		inline: true,
+		hot: true,
+		open: true,
 	},
+
+	plugins: [
+		new webpack.HotModuleReplacementPlugin(),
+	]
 
 }

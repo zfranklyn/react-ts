@@ -3,6 +3,7 @@ import * as ReactDOM from 'react-dom';
 
 import AppComponent from './components/AppComponent';
 import './index.scss';
-import '../node_modules/@blueprintjs/core/dist/blueprint.css';
+import '!style-loader!css-loader!../node_modules/@blueprintjs/core/dist/blueprint.css';
 
 ReactDOM.render(<AppComponent/>, document.getElementById('root'));
+
