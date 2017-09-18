@@ -16,7 +16,30 @@ module.exports = {
 			{ test: /\.tsx?$/, 
 				loader: ['babel-loader', 'ts-loader'] },
 			{ test: /\.scss$/,
-				loader: ['style-loader', 'css-loader', 'sass-loader'] }
+				loader: ['style-loader', 'css-loader', 'sass-loader'] },
+			{ test: /\.css$/,
+				loader: ['style-loader', 'css-loader'],
+			},
+			// https://github.com/palantir/blueprint/issues/123
+			{	test: /\.(woff|woff2)$/,
+			  use: {
+			    loader: 'url-loader',
+			    options: {
+			      name: 'fonts/[hash].[ext]',
+			      limit: 5000,
+			      mimetype: 'application/font-woff'
+			    }
+			  }
+			}, 
+			{	test: /\.(ttf|eot|svg)$/,
+			  use: {
+			    loader: 'file-loader',
+			    options: {
+			      name: 'fonts/[hash].[ext]'
+			    }
+			  }
+			}
+
 		],
 	},
 
