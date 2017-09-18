@@ -13,12 +13,15 @@ module.exports = {
 
 	module: {
 		loaders: [
-			{ test: /\.tsx?$/, loader: ['babel-loader', 'ts-loader'] },
+			{ test: /\.tsx?$/, 
+				loader: ['babel-loader', 'ts-loader'] },
+			{ test: /\.scss$/,
+				loader: ['style-loader', 'css-loader', 'sass-loader'] }
 		],
 	},
 
 	devServer: {
 		contentBase: './dist'
-	}
+	},
 
 }

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './AppComponent.scss';
 
 // Component <IComponentProps, IComponentState>
 export default class AppComponent extends React.Component <any, any> {
